@@ -5,6 +5,7 @@ from esphome.const import (
     CONF_EQUATION,
     CONF_HUMIDITY,
     CONF_TEMPERATURE,
+    DEVICE_CLASS_ABSOLUTE_HUMIDITY,
     ICON_WATER,
     STATE_CLASS_MEASUREMENT,
     UNIT_GRAMS_PER_CUBIC_METER,
@@ -29,6 +30,7 @@ CONFIG_SCHEMA = (
         unit_of_measurement=UNIT_GRAMS_PER_CUBIC_METER,
         icon=ICON_WATER,
         accuracy_decimals=2,
+        device_class=DEVICE_CLASS_ABSOLUTE_HUMIDITY,
         state_class=STATE_CLASS_MEASUREMENT,
     )
     .extend(
